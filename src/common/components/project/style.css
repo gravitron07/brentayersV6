@@ -1,0 +1,112 @@
+
+.project{
+	z-index: 26;
+	width: 100%;
+	background: #262728;
+	clear: both;
+	position: absolute;
+	left: 0;
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+.closedOverlay{
+	z-index: 0;
+}
+.projectDetails{
+	float: left;
+	width: 50%;
+    font-family: 'Andada', serif;
+    color: #eae5d2;
+	@media (max-width: 780px) {
+		width: auto;
+		float: none;
+	}
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+.contentItem{
+	width: 50%;
+	float: left;
+	padding: 0 10px 0 0;
+	&__head{
+		margin: 0;
+		padding: 10px 0 0 0;
+	}
+}
+
+.projectImages{
+	width: 50%;
+	float: left;
+	@media (max-width: 780px) {
+		margin: 20px 0 0 0;
+		width: auto;
+		float: none;
+	}
+}
+.imageList{
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	&__item{
+		float: left;
+		width: 48%;
+		padding: 1%;
+		@media (max-width: 600px) {
+			float: none;
+			width: 100%;
+		}
+	}
+	&__image{
+		width: 100%;
+	}
+}
+.closeButton{
+	color: #eae5d2;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	text-decoration: none;
+	display: block;
+	padding: 0 20px 0 0;
+	&::before{
+		display: block;
+		height: 5px;
+		width: 18px;
+		display: block;
+		content: " ";
+		border-top: 2px solid #eae5d2;
+		border-bottom: 2px solid #eae5d2;			
+		border-bottom: 0;
+		-ms-transform: rotate(45deg); /* IE 9 */
+		-ms-transform-origin: 20% 40%; /* IE 9 */
+		-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+		-webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+		transform: rotate(45deg);
+		transform-origin: 20% 40%;
+		position: absolute;
+		top: 5px;
+		right: 0;
+	}
+	&::after{
+		height: 4px;
+		display: block;
+		width: 18px;
+		content: " ";
+		border-bottom: 2px solid #eae5d2;			
+		-ms-transform: rotate(-45deg); /* IE 9 */
+		-ms-transform-origin: -3% 40%; /* IE 9 */
+		-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+		-webkit-transform-origin: -3% 40%; /* Chrome, Safari, Opera */
+		transform: rotate(-45deg);
+		transform-origin: -3% 40%;
+		position: absolute;
+		top: 13px;
+		right: 0;
+	}
+}

@@ -1,0 +1,25 @@
+.footerNav{
+	text-align: center;
+	&__list{
+		background: #262728;
+		margin: 0;
+		list-style: none;
+		padding: 10px 0;
+	}
+	&__item{
+		color: #eae5d2;
+		display: inline-block;
+		font-size: 1.6em;
+		padding: 0 10px;
+	}
+	&__link{
+		color: #eae5d2;
+	}
+}
+.copyright{
+	text-align: center;
+	padding: 20px;
+	color: #eae5d2;
+	background: #3D3D3D;
+	margin: 0;
+}
