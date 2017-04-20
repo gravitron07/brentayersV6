@@ -21,8 +21,8 @@ export default class AboutPage extends React.Component {
 				<Header className={this.state.containerClass} />
 				<section className={styles.aboutContainer}>
 					<div className={styles.pageBound}>
+						<h2 className="pageHead">A Little about me...</h2>
 						<div className="contentLeft">
-						    <h2 className="pageHead">A Little about me...</h2>
 							<p className="tagline">I specialize in front end design/development, flawless code, and standards compliant websites and applications.</p>
 							<p className="contentBlock">I’ve been creating websites and applications in the Atlanta Area for about 15 years now. I strive to make every site I make not only visually appealing, but useable and engaging for everyone that sees it. You can rest assured that the final product I deliver will be scalable so that as your business grows, your site can too.</p>
 
