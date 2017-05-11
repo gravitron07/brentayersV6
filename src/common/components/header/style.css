@@ -1,5 +1,5 @@
 .headerContainer{
-  background: #262728;
+  background: #67bf6f;
   height: 100vh;
   text-align: center;
   position: relative;
@@ -26,6 +26,7 @@
   font-family: 'Francois One', sans-serif;
   font-size: 2.3rem;
   text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
 }
 
 
@@ -38,7 +39,7 @@
     /*right: -1000px;*/
     left: 99%;
     width: 100%;
-    z-index: 2;
+    z-index: 6;
   }
   .headerNavList--active{
     animation: menuActive 1s ease-in-out forwards;
@@ -51,13 +52,13 @@
     margin: 0;
   }
   .headerNavList__Item:nth-of-type(1) {
-    background: #894cab;
+    background: #67bf6f;
   }
   .headerNavList__Item:nth-of-type(2) {
     background: #67bfb2;
   }
   .headerNavList__Item:nth-of-type(3) {
-    background: #67bf6f;
+    background: #FA393F;
   }
 
   .headerNavList__link {

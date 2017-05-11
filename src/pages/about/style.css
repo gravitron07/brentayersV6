@@ -9,6 +9,7 @@
 	animation-delay: 1s;
 	opacity: 0;
 	min-height: 80vh;
+	padding: 0 0 85px 0;
 }
 .pageBound{
 	margin: 0 auto;

@@ -1,3 +1,9 @@
+.footerContainer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
+}
 .footerNav{
 	text-align: center;
 	&__list{

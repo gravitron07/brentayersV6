@@ -1,4 +1,5 @@
 import React from "react";
+// import Chart from 'chart.js';
 import styles from "./style.css";
 
 import Header from "../../common/components/header/component";
@@ -16,6 +17,32 @@ export default class AboutPage extends React.Component {
 		this.setState({containerClass  : 'headerWrapper headerWrapper--about animate'})
 	}
 	render() {
+
+// const data = {
+// 	labels: [
+// 		'Red',
+// 		'Green',
+// 		'Yellow'
+// 	],
+// 	datasets: [{
+// 		data: [300, 50, 100],
+// 		backgroundColor: [
+// 		'#FF6384',
+// 		'#36A2EB',
+// 		'#FFCE56'
+// 		],
+// 		hoverBackgroundColor: [
+// 		'#FF6384',
+// 		'#36A2EB',
+// 		'#FFCE56'
+// 		]
+// 	}]
+// };
+// var myDoughnutChart = new Chart(ctx, {
+//     type: 'doughnut',
+//     data: data,
+//     options: options
+// });
 		return (
 			<div>
 				<Header className={this.state.containerClass} />

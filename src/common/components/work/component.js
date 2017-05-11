@@ -32,7 +32,7 @@ export default class Work extends React.Component {
               this.state.clients.map(function(client, i) {
                 let imageString = `/images/projects/${client.images[0]}`;
                 let project = self.getProject(client.path, self.props.project);
-                return <div className={styles.workNavList__item} key={client.path}><Link className={styles.workNavList__link} to={`/work/${client.path}`}><img className={styles.workNavList__img} src={imageString} /></Link>{project}</div>
+                return <div id={client.path} className={styles.workNavList__item} key={client.path}><Link className={styles.workNavList__link} to={`/work/${client.path}`}><img className={styles.workNavList__img} src={imageString} /></Link>{project}</div>
               })
             }
           </section>

@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
   }
   render() {
     return (
-      <footer>
+      <footer className={styles.footerContainer}>
         <nav className={styles.footerNav}>
           <ul className={styles.footerNav__list}>
             <li className={styles.footerNav__item}><a className={styles.footerNav__link} href="https://www.facebook.com/gravitron07"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>

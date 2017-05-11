@@ -2,7 +2,7 @@
 .project{
 	z-index: 26;
 	width: 100%;
-	background: #262728;
+	background: #eae5d2;
 	clear: both;
 	position: absolute;
 	left: 0;
@@ -12,14 +12,18 @@
 	  clear: both;
 	}
 }
+.projectContainer{
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .closedOverlay{
 	z-index: 0;
 }
 .projectDetails{
 	float: left;
 	width: 50%;
-    font-family: 'Andada', serif;
-    color: #eae5d2;
+    font-family: Arial, sans-serif;
+    color: #262728;
 	@media (max-width: 780px) {
 		width: auto;
 		float: none;

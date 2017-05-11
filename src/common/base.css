@@ -22,9 +22,9 @@ body {
 }
 
 :global(.contentContainer){
-  max-width: 1200px;
+  max-width: 2100px;
   margin: 0 auto;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   text-align: left;
   position: relative;
   top: 0;
@@ -39,7 +39,7 @@ body {
 :global {
 
   .headerWrapper--contact.animate{
-    background-color: #67bf6f;
+    background-color: #FA393F;
   }
   .headerWrapper--about.animate{
     background-color: #67bfb2;
@@ -71,7 +71,7 @@ body {
   .pageHead{
     font-size: 6.25rem;
     color: inherit;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 50px 0;
     font-family: 'Francois One', sans-serif;
     font-weight: normal;
     color: #eae5d2;
@@ -96,16 +96,16 @@ body {
   .contentListHead{
     font-size: 2.15rem;
     line-height: 2rem;
-    padding: 20px 0 0 0;
+    padding: 20px 0 10px 0;
     margin: 0;
     font-weight: normal;
     font-family: 'Francois One', sans-serif;
   }
 
   .contentBlock{
-    margin: 20px 0 30px 0;
-    line-height: 1.3rem;
-    font-size: .9rem;
+    margin: 10px 0 50px 0;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
     text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
   }
   .contentLeft{
@@ -176,6 +176,11 @@ body {
       width: 100%;
       float: none;
     }
+    .contentBlock{
+      margin: 20px 0 30px 0;
+      line-height: 1.3rem;
+      font-size: .9rem;
+    }
     .pageHead{
       font-size: 4.5rem;
       line-height: 4rem;
@@ -215,3 +220,37 @@ body {
       width: 100%;
     }
 }
+
+/*@keyframes :global(expand) {
+    0% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      border-radius: 0px;
+      height: 100vh;
+    }
+    70% {
+      -webkit-transform: scale(.02, .15);
+      transform: scale(.02, .05);
+      border-radius: 2000px;
+      height: 100vh;
+    }
+    80% {
+      -webkit-transform: scale(.75, .95);
+      transform: scale(.75, .95);
+      border-radius: 2000px;
+      height: 100vh;
+    }
+    90% {
+      -webkit-transform: scale(.75, .75);
+      transform: scale(.75, .75);
+      border-radius: 50px;
+      height: 100vh;
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      border-radius: 0px;
+      height: 100vh;
+      width: 100%;
+    }
+}*/

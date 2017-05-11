@@ -1,6 +1,6 @@
 .logo{
 	position: absolute;
-	top: 25%;
+	top: 19%;
 	width: 100%;
 }
 .logo__image{
@@ -18,9 +18,10 @@
 }
 .logo__link{
   color: #eae5d2;
-  font-family: 'Crimson Text', sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-size: 2.3rem;
   text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
 }
 .logo__name{
 	display: block;

@@ -2,13 +2,14 @@
 	position: absolute;
 	top: 135px;
 	color: #eae5d2;
-	background: #67bf6f;
+	background: #FA393F;
 	text-align: center;
 	width: 100%;
 	animation: fade .5s ease-in-out forwards;
 	animation-delay: 1s;
 	opacity: 0;
 	min-height: 80vh;
+	padding: 0 0 85px 0;
 }
 .pageBound{
 	margin: 0 auto;
