@@ -8,7 +8,6 @@ import Project from "../project/component";
 export default class Work extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       'clients': clients.sort(function() { return 0.5 - Math.random() })
     };

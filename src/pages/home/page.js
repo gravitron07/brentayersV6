@@ -31,7 +31,6 @@ export default class HomePage extends React.Component {
     });
   }
   componentDidMount() {
-    console.log(this.state.path);
     if(this.state.path.indexOf('/work') === 0) {
       this.scrollToPlace('.contentContainer');
     }else{
@@ -39,8 +38,11 @@ export default class HomePage extends React.Component {
     }
   }
   componentDidUpdate() {
-    if(this.props.location.pathname.indexOf('/work/') !== -1) {
+
+    if(typeof this.state.selectedWork !== 'undefined') {
       this.scrollToPlace('#' + this.state.selectedWork);
+    }else if(this.props.location.pathname === '/work') {
+      this.scrollToPlace('.contentContainer');
     }
   }
   render() {

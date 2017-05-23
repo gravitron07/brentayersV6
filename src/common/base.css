@@ -193,7 +193,7 @@ body {
   }
 }
 
-@keyframes :global(expand) {
+/*@keyframes :global(expand) {
     0% {
       margin: 0%;
       height: 100vh;
@@ -219,9 +219,9 @@ body {
       height: 100vh;
       width: 100%;
     }
-}
+}*/
 
-/*@keyframes :global(expand) {
+@keyframes :global(expand) {
     0% {
       -webkit-transform: scale(1, 1);
       transform: scale(1, 1);
@@ -253,4 +253,4 @@ body {
       height: 100vh;
       width: 100%;
     }
-}*/
+}
