@@ -1,5 +1,4 @@
-Polish menu
 Charts on about page
-Fix animation - swap to new one
+Fix work defect- sometimes doesn't scroll correctly
 Portfolio styling
 Deploy

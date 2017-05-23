@@ -3,11 +3,14 @@ import { browserHistory, Link } from 'react-router';
 import Logo from "../logo/component";
 import MenuToggleButton from "../MenuToggleButton/component";
 import styles from './style.css';
+import animateBase from '../../../../node_modules/animate.css/source/_base.css';
+import bounce from '../../../../node_modules/animate.css/source/bouncing_entrances/bounceInDown.css';
 
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       'containerClass': 'headerWrapper',
       'menuOpen': false,
@@ -30,13 +33,12 @@ export default class Header extends React.Component {
     }
   }
   workHandler(){
-    // alert('work bitch');
   }
   render() {
     let containerClass = styles.headerContainer + ' ' + this.props.className;
     return (
-      <section className={containerClass}>
-        <nav className={styles.header}>
+      <div>
+        <nav className={styles.header + ' ' + bounce.bounceInDown + ' ' + animateBase.animated}>
           <ul className={this.state.menuToggleClass}>
             <li className={styles.headerNavList__Item}><Link className={styles.headerNavList__link} onClick={this.workHandler} to={`/work`}><span>Work</span></Link></li>
             <li className={styles.headerNavList__Item}><Link className={styles.headerNavList__link} to={`/about`}><span>About</span></Link></li>
@@ -44,8 +46,10 @@ export default class Header extends React.Component {
           </ul>
           <MenuToggleButton clickHandler={this.menuToggle} />
         </nav>
-        <Logo/>
-      </section>
+        <section className={containerClass}>
+          <Logo/>
+        </section>
+      </div>
     );
   }
 }
