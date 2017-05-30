@@ -39,9 +39,7 @@ export default class HomePage extends React.Component {
   }
   componentDidUpdate() {
 
-    if(typeof this.state.selectedWork !== 'undefined') {
-      this.scrollToPlace('#' + this.state.selectedWork);
-    }else if(this.props.location.pathname === '/work') {
+    if(this.props.location.pathname.indexOf('/work') !== -1) {
       this.scrollToPlace('.contentContainer');
     }
   }

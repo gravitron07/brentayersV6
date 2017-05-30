@@ -1,4 +1,2 @@
-Charts on about page
-Fix work defect- sometimes doesn't scroll correctly
-Portfolio styling
+Portfolio styling - need to polish animation
 Deploy

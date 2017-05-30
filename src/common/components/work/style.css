@@ -1,8 +1,9 @@
 .workContainer{
 	text-align: left;
-	padding: 20px 0 110px 0;
+	padding: 0px 0 110px 0;
 	position: relative;
-	top: 1px;
+	min-height: 100vh;
+	overflow: hidden;
 }
 .workNav{
 	margin: 20px 0 0 0;
@@ -32,8 +33,10 @@
     -webkit-transition: all .1s ease-in;
     transition: all .1s ease-in;
     will-change: transform;
+    padding: 5px;
 	&:hover{
 		z-index: 7;
+		position: relative;
 		box-shadow: 0 5em 10em rgba(0,0,0,.5);
 	    -webkit-transform: scale(1.1);
 	    transform: scale(1.1);
@@ -42,21 +45,22 @@
 .workNavList__img{
 	width: 100%;
 	display: block;
+	border: 2px solid #fff;
 }
 .workHeader{
     font-size: 2.25rem;
     color: inherit;
-    margin: 20px 0 10px 5%;
+    margin: 40px 0 10px 5%;
     font-family: 'Francois One', sans-serif;
     font-weight: normal;
-    color: #eae5d2;
+    color: #67bf6f;
 	display: inline;
-    background: #262728;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    font-size: 1.5625rem;
+    font-size: 2.5625rem;
     line-height: 1.6;
     padding: 0.2375rem;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
 }
 
 @media (max-width: 600px) {
@@ -66,5 +70,8 @@
 	.workNavList__item--large{
 		float: left;
 		width: 100%;
+	}
+	.workContainer{
+		overflow-y: auto;
 	}
 }

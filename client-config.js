@@ -1,6 +1,7 @@
 module.exports = [
 	{
 		"path" : "tees-with-tude",
+		"highlightColor": "#3da0df",
 		"label" : "Tees With Tude",
 		"project" : "Tees with 'Tude is an online t-shirt retail company",
 		"deliverables" : ["Logo design", "email marketing", "custom site design", "interface design", "flash animation"],
@@ -9,6 +10,7 @@ module.exports = [
 	},
 	{
 		"path" : "remax",
+		"highlightColor": "#0067b5",
 		"label" : "RE/MAX",
 		"project" : "Re/Max wanted to create a site to help educate first time home buyers on the $8000 tax credit that would also work with their previously launched print campaign.",
 		"deliverables" : ["2 Microsites"],
@@ -17,6 +19,7 @@ module.exports = [
 	},
 	{
 		"path" : "butler-tire",
+		"highlightColor": "#242424",
 		"label" : "Butler Tire",
 		"project" : "Butler Tire is known for making cars go from average to exceptional. They needed a stunning site to match their reputation.",
 		"deliverables" : ["Complete site overhaul", "custom cms", "ongoing email marketing campaigns"],
@@ -25,6 +28,7 @@ module.exports = [
 	},
 	{
 		"path" : "champagne-logistics",
+		"highlightColor": "#e5b523",
 		"label" : "Champagne Logistics",
 		"project" : "Full re-design of Champagne Logistics site",
 		"deliverables" : ["Custom Website", "Back-end integration"],
@@ -33,6 +37,7 @@ module.exports = [
 	},
 	{
 		"path" : "gigscore",
+		"highlightColor": "#271815",
 		"label" : "GigScore",
 		"project" : "An online community for musicians where they can post a profile or search directly to find jobs and other musicians to play with.",
 		"deliverables" : ["Hand coded custom site", "custom cms", "user backend and custom community system"],
@@ -41,6 +46,7 @@ module.exports = [
 	},
 	{
 		"path" : "kristen-skin-care",
+		"highlightColor": "#ec326f",
 		"label" : "Kristen's Skin Care",
 		"project" : "Logo and Website design for Kristen's Skin Care",
 		"deliverables" : ["Custom logo", "custom site"],
@@ -49,6 +55,7 @@ module.exports = [
 	},
 	{
 		"path" : "metro-atlanta-chamber",
+		"highlightColor": "#f05b2a",
 		"label" : "Metro Atlanta Chamber",
 		"project" : "The Metro Atlanta Chamber needed a new site to that would give them full control of their data so that they could continue their success as business leaders in Atlanta.",
 		"deliverables" : ["Custom content Management System", "Event Management System", "Member Registration and Management", "E-Commerce", "Dynamic Flash Banner"],
@@ -57,6 +64,7 @@ module.exports = [
 	},
 	{
 		"path" : "the-villa-oceane",
+		"highlightColor": "#282b24",
 		"label" : "The Villa Oceane",
 		"project" : "The Villa Oceane is an amazing Event/Rental property located in the middle of Buckhead.",
 		"deliverables" : ["Custom flash site", "logo design"],
@@ -65,6 +73,7 @@ module.exports = [
 	},
 	{
 		"path" : "pro-pick-racing",
+		"highlightColor": "#3e382c",
 		"label" : "ProPick Racing",
 		"project" : "Propick is a one of a kind online betting site that allows you to bet like the pros, with great advice from the pros.",
 		"deliverables" : ["Logo design", "email marketing", "custom site design", "interface design", "flash animation", "dynamic racing footage feed"],

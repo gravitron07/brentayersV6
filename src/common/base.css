@@ -68,7 +68,7 @@ body {
     line-height: 1.85;
     padding: 0.2rem;
   }
-  .pageHead{
+  .pageHead, .pageHead--work{
     font-size: 6.25rem;
     color: inherit;
     margin: 20px 0 50px 0;
@@ -77,6 +77,10 @@ body {
     color: #eae5d2;
     line-height: 5.5rem;
     text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.75);
+    &--work{
+      text-shadow: none;
+      color: #67bf6f;
+    }
   }
 
   .contentHead{
@@ -123,13 +127,29 @@ body {
     -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
   }
-
+  .logoIcon{
+    width: 80%;
+  }
   .contentItem{
-    &__list {
+    &__list, &__list--logos {
         margin: 0;
         padding: 0;
         list-style: none;
     }
+    &__list--logos {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -moz-box-pack: justify;
+      -ms-box-pack: justify;
+      -webkit-box-pack: justify;
+      box-pack: justify;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+
+    }
+    flex: 1 1 auto;
     &__item {
         position: relative;
         padding: 0 0 0 26px;
@@ -142,6 +162,16 @@ body {
     }
     &__item--contact{
       line-height: 30px;
+    }
+    &__item--logo{
+      width: 60px;
+      height: 70px;
+      padding: 5px;
+/*      -webkit-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;*/
+
     }
     &__item:before {
 

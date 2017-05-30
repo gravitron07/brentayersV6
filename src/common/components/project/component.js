@@ -12,7 +12,6 @@ export default class Project extends React.Component {
     super(props);
 
     this.state = {
-      'faderClass': (typeof this.props.path !== 'undefined') ? styles.faderContainer + ' ' + fadeIn.fadeIn + ' ' + animateBase.animated : '',
       'client' : clients.filter((client) => {return (client.path === this.props.path)})[0]
     };
     this.closeOverlay = this.closeOverlay.bind(this);
@@ -21,9 +20,6 @@ export default class Project extends React.Component {
     
   }
   closeOverlay(){
-    this.setState({
-      faderClass : animateBase.animated + ' ' + fadeOut.fadeOutDown + ' ' + styles.closedOverlay
-    });
   }
   buildImageList(items){
     let list = [];
@@ -45,22 +41,25 @@ export default class Project extends React.Component {
     let deliverables = this.buildList(this.state.client.deliverables);
     let technologies = this.buildList(this.state.client.technologies);
     let images = this.buildImageList(this.state.client.images);
+    let projectStyle = {
+      background: this.state.client.highlightColor
+    }
 
     return (
-      <section className={styles.project}>
+      <section className={styles.project} style={projectStyle}>
       <div className={styles.projectContainer}>
         <Link to={`/work`} className={styles.closeButton} onClick={this.closeOverlay}>Close</Link>
+        <h2 className="pageHead">{this.state.client.label}</h2>
         <section className={styles.projectDetails}>
-          <h2 className={styles.projectDetails__title}>{this.state.client.label}</h2>
-          <p className={styles.projectDetails__description}>{this.state.client.project}</p>
+          <p className="tagline">{this.state.client.project}</p>
           <div className={styles.contentItem}>
-            <h3 className={styles.contentItem__head}>Deliverables</h3>
+            <h3 className="contentListHead">Deliverables</h3>
             <ul className="contentItem__list">
             {deliverables}
             </ul>
           </div>
           <div className={styles.contentItem}>
-            <h3 className={styles.contentItem__head}>Technologies Used:</h3>
+            <h3 className="contentListHead">Technologies Used:</h3>
             <ul className="contentItem__list">
               {technologies}
             </ul>

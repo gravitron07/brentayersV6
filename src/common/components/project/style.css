@@ -2,28 +2,47 @@
 .project{
 	z-index: 26;
 	width: 100%;
-	background: #eae5d2;
+	/*background: #3da7e5;*/
 	clear: both;
+	padding: 10px;
 	position: absolute;
-	left: 0;
+	top: 0;
+	right: -100%;
+	animation: slideItIn .5s ease-in-out forwards;
+	animation-delay: 0s;
 	&:after {
 	  content: "";
 	  display: table;
 	  clear: both;
 	}
 }
+@keyframes slideItIn {
+    0% {
+      right: -100%;
+    }
+    80% {
+    	right: 0%;
+    }
+    90% {
+    	right: -2%;
+    }
+    100% {
+      right: 0%;
+    }
+}
 .projectContainer{
 	max-width: 1200px;
 	margin: 0 auto;
+	height: 100vh;
 }
 .closedOverlay{
 	z-index: 0;
 }
 .projectDetails{
 	float: left;
-	width: 50%;
+	width: 60%;
     font-family: Arial, sans-serif;
-    color: #262728;
+    color: #eae5d2;
 	@media (max-width: 780px) {
 		width: auto;
 		float: none;
@@ -45,7 +64,7 @@
 }
 
 .projectImages{
-	width: 50%;
+	width: 40%;
 	float: left;
 	@media (max-width: 780px) {
 		margin: 20px 0 0 0;
@@ -54,7 +73,7 @@
 	}
 }
 .imageList{
-	margin: 20px 0 0 0;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 	&__item{
@@ -68,6 +87,7 @@
 	}
 	&__image{
 		width: 100%;
+		border: 2px solid #eae5d2;
 	}
 }
 .closeButton{
@@ -112,5 +132,14 @@
 		position: absolute;
 		top: 13px;
 		right: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.contentItem {
+		width: 100%;
+	}
+	.projectContainer{
+		height: auto;
 	}
 }
