@@ -77,8 +77,8 @@ if (!process.env.PRODUCTION) {
  * Express server
  *
  *****************/
-
-const port = process.env.PORT || 80;
+console.log('port:' + process.env.PORT);
+const port = process.env.PORT || 8080;
 const server = app.listen(port, '0.0.0.0', () => {
   const host = server.address().address;
   const port = server.address().port;
