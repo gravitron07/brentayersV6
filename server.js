@@ -79,7 +79,7 @@ if (!process.env.PRODUCTION) {
  *****************/
 
 const port = process.env.PORT || 8080;
-const server = app.listen(port, () => {
+const server = app.listen(port, '0.0.0.0', () => {
   const host = server.address().address;
   const port = server.address().port;
 
