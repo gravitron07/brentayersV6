@@ -10,7 +10,7 @@
     "test": "nyc ava --fail-fast --verbose --require babel-register",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm build/app.js",
-    "start": "set NODE_ENV=production && set port=80 && node start.js"
+    "start": "node startPROD.js"
   },
   "repository": {
     "type": "git",
