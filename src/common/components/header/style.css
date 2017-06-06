@@ -48,7 +48,7 @@
     position: absolute;
     top: 0px;
     /*right: -1000px;*/
-    left: 99%;
+    left: 100%;
     width: 100%;
     z-index: 6;
   }
