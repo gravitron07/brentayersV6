@@ -1,2 +1,2 @@
-Portfolio styling - need to polish animation
-Deploy
+-Fix scrolling on folio, x-overflow
+-domain

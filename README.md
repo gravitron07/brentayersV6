@@ -1,3 +1,5 @@
+forever start startPROD.js
+
 A minimal skeleton for building testable React apps using Babel.
 
 - [Design Goals](#design-goals)
