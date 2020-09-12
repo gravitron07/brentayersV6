@@ -56,8 +56,6 @@ export default class AboutPage extends React.Component {
 							<h3 className="contentHead">My Background</h3>
 							<p className="contentBlock">I'm a full stack developer residing in Atlanta, Georgia with my wife and three daughters. I began my career writing Perl scripts, then transitioned to design and frontend development. I am comfortable working on all layers of a web application, from databases to middleware to UI.</p>
 
-							<h3 className="contentHead">Where I've Been</h3>
-							<p className="contentBlock">I started designing websites professionally in 2000 at Fidelity National Information Solutions. While at Fidelity, I designed real estate websites for RE/MAX, Keller Williams, Realty Executives, and Century 21. After leaving Fidelity in 2004, I went the agency route and worked on some really cool projects for various clients around Atlanta. After a brief stint as a contractor I was offered an amazing opportunity to come work as a front-end developer on WebMD's strategic initiatives team, and ultimately settled in to lead the mobile web development team. I left WebMD in 2012 and I am now a development lead at The Home Depot, where I get to enjoy the break neck pace of online retail selling LOTS of hammers and nails.</p>
 						</div>
 						<div className="contentRight">
 							<h3 className="contentListHead">Expertise</h3>
